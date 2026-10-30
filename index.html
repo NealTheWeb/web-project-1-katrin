@@ -13,38 +13,56 @@
     </style>
   </head>
   <body>
-    <h2 id="top">The Chernobyl Nuclear Power Plant</h2>
-    <br />
-    <a href="#top" class="sticky-text">Back To Top ↑</a>
-
-    <section style="display: flex; align-items: center; gap: 20px">
-      <img
-        src="images/Chernobyl_aerial_view_3D_model.jpg"
-        style="width: 300px"
-        alt="A 3D diagram showing the building with all four of the units labeled" />
-      <p>
-        The Chernobyl nuclear power plant is a decommissioned nuclear plant. It
-        is located in Ukraine, about 100-110 Km north of Kyiv. It is located
-        near the abandoned city of Pripyat, about 16 Km from the city of
-        Chernobyl as well as another 16Km from the Belarus-Ukraine border.
-        <br /><br />
-
-        The RMBK (which, in Russian, is Reaktor Bolshoy Moshchnost Kanalny, or
-        high-power channel reactor) is a class of water-cooled Soviet-designed
-        nuclear power reactors that use graphite moderators.
-      </p>
-    </section>
-    <br /><br /><br />
-    <header>
+    <header id="#top">
       <nav aria-label="Main Navigation">
         <ul type="square">
+          <li><a href="index.html">Home</a></li>
           <li><a href="history.html">History</a></li>
-          <li><a href="Pripyat.html">Pripyat</a></li>
+          <li><a href="pripyat.html">Pripyat</a></li>
           <li><a href="accident.html">The Accident</a></li>
-          <li><a href="coverup.html">The Cover-Up</a></li>
+          <li><a href="cover-up.html">The Cover-Up</a></li>
           <li><a href="effect.html">The Effect</a></li>
         </ul>
       </nav>
+      <h1>The Chernobyl Nuclear Power Plant</h1>
+      <br />
     </header>
+    <!--
+      anchor tags allow you to create links to connect pages
+      in this case, it is being used to jump to a specific 
+      section (the header) in the page
+    -->
+    <a href="#top" class="sticky-text">Back To Top ↑</a>
+    <main>
+      <section>
+        <p>
+          The Chernobyl nuclear power plant is a decommissioned nuclear plant.
+          It is located in Ukraine, about 100-110 Km north of Kyiv. It is
+          located near the abandoned city of Pripyat, about 16 Km from the city
+          of Chernobyl as well as another 16Km from the Belarus-Ukraine
+          border.<br /><br />
+          The RMBK (which, in Russian, is Reaktor Bolshoy Moshchnost Kanalny, or
+          high-power channel reactor) is a class of water-cooled Soviet-designed
+          nuclear power reactors that use graphite moderators. <br /><br />
+          On the 26th of April 1986, reactor No.4 would suffer a catastrophic
+          explosion and meltdown which would later be known as the Chernobyl
+          disaster. The plant itself now rests within a large, restricted area
+          known as the Chernobyl exclusion zone, which also stretches into
+          Belarus and is known there as the Polesie State Radioecological
+          Reserve.
+          <br /><br />
+          Later, in 1991, unit 2 was placed into permanent shutdown by the
+          plants operator. This was shorty followed by unit 1 in 1996 and unit 3
+          in the 2000s. In 2013, the plants operator announced that Units 1-3
+          were fully defueled, meaning all damaged and used fuel assemblies were
+          removed and put into storage, and were therefore no longer classed as
+          nuclear installations. <br /><br />
+        </p>
+        <img
+          src="images/Chernobyl_aerial_view_3D_model.jpg"
+          style="width: 300px"
+          alt="A 3D diagram showing the building with all four of the units labeled" />
+      </section>
+    </main>
   </body>
 </html>
