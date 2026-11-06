@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .sticky-text {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
   </head>
   <body>
     <header id="top">
@@ -17,9 +24,7 @@
           <li><a href="quiz.html">Quiz</a></li>
         </ul>
       </nav>
-      <a href="index.html">Back To Home</a>
     </header>
-
     <main>
       <section>
         <form>
@@ -32,7 +37,7 @@
             <br />
             <h2>History</h2>
             <p>
-              when were the plans to first construct the Chernobyl Nuclear Power
+              When were the plans to first construct the Chernobyl Nuclear Power
               Plant first created?
             </p>
             <input type="radio" id="1952" name="date" />
@@ -47,18 +52,16 @@
             <label for="1973">1973</label><br /><br />
 
             <p>What was the Chernobyl Nuclear Power Plant originally named?</p>
-            <input type="radio" id="pripyat-nuc" name="og-name" />
-            <label for="pripyat-nuc">The Pripyat Nuclear Power Plant</label
-            ><br />
-            <input type="radio" id="stalin-nuc" name="og-name" />
-            <label for="stalin-nuc">The J. Stalin Nuclear Power Plant</label
-            ><br />
-            <input type="radio" id="gorbachev-nuc" name="og-name" />
-            <label for="gorbachev-nuc"
-              >The M. Gorbachev Nuclear Power Plant</label
-            ><br />
-            <input type="radio" id="lenin-nuc" name="og-name" />
-            <label for="lenin-nuc">The V. I. Lenin Nuclear Power Plant</label>
+            <textarea rows="6" cols="40" placeholder="type here"></textarea>
+            <br /><br />
+
+            <p>
+              At the time, how much of Ukraine's energy did all four reactors
+              create together?
+            </p>
+            <input type="number" min="0" max="100" placeholder="0" />
+            <span>%</span>
+            <h2>Pripyat</h2>
           </fieldset>
         </form>
       </section>
