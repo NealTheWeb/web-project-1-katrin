@@ -27,20 +27,58 @@
     </header>
     <main>
       <section>
+        <!--
+        A form is a container to collect or submit user data.
+        -->
         <form>
+          <!--
+          Fieldsets group related elements and controls within a form.
+          They show up as actual visual boxes around information.
+          -->
           <fieldset>
+            <!--
+            Legends act like captions or titles for for content inside the fielset
+            -->
             <legend><h1>Quiz!</h1></legend>
+            <!--
+            Anything inbetween the opening and closing tags of
+            a paragraph tag will show up as words in the webpage.
+            -->
             <p>
               Please fill out the short quiz below to test your attention and
               understanding of the topic.
             </p>
+            <!--
+            br tags insert line breaks
+            -->
             <br />
+            <!--
+            h2 is the second biggest type of heading.
+            -->
             <h2>History</h2>
             <p>
               When were the plans to first construct the Chernobyl Nuclear Power
               Plant first created?
             </p>
+            <!--
+            Input tags are used to to create interactive controls
+            in web-pages to collect data from users.
+
+            The type attribute tells the browser what type of element
+            or data the browser is dealing with. In this case, it is a 
+            radio-button
+
+            The id attribute gives an elemnt a unique identifier.
+
+            The main purpose of the name attribute is to identify
+            information when it is submitted to a server.
+            -->
             <input type="radio" id="1952" name="date" />
+            <!--
+            Label tags define a descriptive caption for a form control.
+
+            For attributes link label tags to specific input elements.
+            -->
             <label for="1952">1952</label><br />
             <input type="radio" id="1966" name="date" />
             <label for="1966">1966</label><br />
@@ -50,10 +88,18 @@
             <label for="1963">1963</label><br />
             <input type="radio" id="1973" name="date" />
             <label for="1973">1973</label><br /><br />
-
             <p>What was the Chernobyl Nuclear Power Plant originally named?</p>
             <label for="original-name">Please type in the area below.</label
             ><br />
+            <!--
+            The textarea tag creates a multi-line plain text unput
+            that allows users to enter and edit long-form text.
+
+            Row and collumn attributes define how big the textarea is.
+
+            The placeholder attribute is what you'll see in the textarea
+            before you start typing.
+            -->
             <textarea
               rows="6"
               cols="40"
@@ -61,12 +107,16 @@
               id="original-name"
               name="og-name"></textarea>
             <br /><br />
-
             <p>
               At the time, how much of Ukraine's energy did all four reactors
               create together?
             </p>
             <label for="percent">Percent:</label>
+            <!--
+            Number inputs allow users to input an numeric value.
+            Min and max define the minimum number allowed to be 
+            chosen/typed and the maximum.
+            -->
             <input
               type="number"
               min="0"
@@ -75,9 +125,54 @@
               id="percent"
               name="percent" />
             <h2>Pripyat</h2>
+            <p>How many hours after the explosion was Pripyat evacuated?</p>
+            <input
+              type="number"
+              min="0"
+              max="100"
+              placeholder="0"
+              id="hours"
+              name="hours" />
+            <label for="hours">Hours</label><br /><br />
+            <p>On what day was pripyat evacuated?</p>
+            <input type="radio" id="april-27" name="day" />
+            <label for="april-27">The 27<sup>th</sup> of April</label><br />
+            <input type="radio" id="may-1" name="day" />
+            <label for="may-1">The 1<sup>st</sup> of May</label><br />
+            <input type="radio" id="april-29" name="day" />
+            <label for="april-29">The 29<sup>th</sup> of April</label><br />
+            <input type="radio" id="may-2" name="day" />
+            <label for="may-2">The 2<sup>nd</sup> of May</label><br /><br />
+            <h2>The Accident</h2>
+            <input type="radio" id="rbmk-1000" name="reactor" />
+            <label for="rbmk-1000">RBMK-1,000</label><br />
+            <input type="radio" id="vver-1000" name="reactor" />
+            <label for="vver-1000">VVER-1,000</label><br />
+            <input type="radio" id="egp-6" name="reactor" />
+            <label for="egp-6">EGP-6</label><br />
+            <input type="radio" id="bn-600" name="reactor" />
+            <label for="bn-600">BN-600</label>
+            <br /><br />
+            <label for="explosion-time"
+              >In what minute did the reactor explode? (please enter a time in
+              12-hour format)</label
+            >
+            <br />
+            <!--
+            The time input allows users to input any time without
+            using time zone data.
+            -->
+            <input
+              type="time"
+              id="explosion-time"
+              name="explode-time" /><br /><br /><br />
+            <input type="submit" value="submit" />
           </fieldset>
         </form>
       </section>
     </main>
   </body>
+  <br /><br />
+  <hr />
+  <footer>NealTheWeb 2026&#169;</footer>
 </html>
